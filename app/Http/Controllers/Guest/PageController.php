@@ -28,4 +28,11 @@ class PageController extends Controller
     {
         return view('movies');
     }
+
+    public function detail($id)
+    {
+        $title = 'Dettaglio Film';
+        $movie = Movie::find($id);
+        return view('details', compact('movie', 'title'));
+    }
 }

@@ -16,7 +16,7 @@
               <h6 class="card-title">Nazionalità: {{ $movie->nationality }}</h6>
               <h6 class="card-title">Data uscita: {{ $movie->date }}</h6>
               <h6 class="card-title">Voto: {{ $movie->vote }}</h6>
-              <a href="#" class="btn btn-primary">Dettaglio</a>
+              <a href="{{ route('details', ['id' => $movie->id]) }}" class="btn btn-primary">Dettaglio</a>
               </p>
             </div>
           </div>
