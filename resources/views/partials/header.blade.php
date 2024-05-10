@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-lg bg-body-secondary">
-    <div class="container-fluid">
+    <div class="container">
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
