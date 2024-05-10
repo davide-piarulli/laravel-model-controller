@@ -10,14 +10,15 @@ class PageController extends Controller
 {
     public function index()
     {
-        return view('home');
+        // SELECT * from movies
+        $movies = Movie::all();
+        // dd($movies);
+        return view('home', compact('movies'));
     }
 
     public function movies()
     {
-        $movies = Movie::all();
-        dd($movies);
-        return view('movies', compact('movies'));
-        // return view('movies');
+
+        return view('movies');
     }
 }
